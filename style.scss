@@ -1,0 +1,291 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+
+  .introduction{
+    background-image: url('https://i.pinimg.com/originals/83/69/af/8369af4f6903fc8412e5b7971c2be4cc.jpg');
+    background-repeat: repeat-x;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-family: 'Caveat', cursive;
+      color: #FFF;
+      font-size: 150px;
+    }
+  }
+
+  .projects {
+    background-color: #6320EE;
+
+    div:first-child {
+      padding: 0 200px;
+      margin-bottom: 20px;
+
+      h3 {
+        font-size: 40px;
+        padding: 10px 0;
+        text-align: center;
+        color: #F8F0FB;
+        border-bottom: 1px dotted #CAD5CA;
+      }
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-bottom: 50px;
+
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: white;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+        height: 350px; // cambia questa altezza
+      }
+
+      .container {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          right: -17px;
+          background-color: white;
+          border: 4px solid #FF9F55;
+          top: 15px;
+          border-radius: 50%;
+          z-index: 1;
+        }
+
+      }
+
+      .left {
+        left: -80px;
+
+        &::before {
+          content: " ";
+          height: 0;
+          position: absolute;
+          top: 22px;
+          width: 0;
+          z-index: 1;
+          right: 30px;
+          border: medium solid white;
+          border-width: 10px 0 10px 10px;
+          border-color: transparent transparent transparent white;
+        }
+
+      }
+
+      .right {
+        left: 50%;
+
+        &::before {
+          content: " ";
+          height: 0;
+          position: absolute;
+          top: 22px;
+          width: 0;
+          z-index: 1;
+          left: 30px;
+          border: medium solid white;
+          border-width: 10px 10px 10px 0;
+          border-color: transparent white transparent transparent;
+        }
+
+        &::after {
+          left: -16px;
+        }
+
+      }
+
+      .content {
+        padding: 20px 30px;
+        background-color: white;
+        position: relative;
+        border-radius: 6px;
+      }
+
+
+    }
+
+  }
+
+  .skills {
+
+    #skill-container {
+
+      /*counter transform the bg image on the caps*/
+    .hexagon {
+    	position: relative;
+    	width: 130px;
+    	height: 75.06px;
+    	margin: 37.53px 0;
+    	background-image: url(https://arcweb.co/wp-content/uploads/2016/10/react-logo-1000-transparent.png);
+    	background-size: auto 145.4923px;
+    	background-position: center;
+    	border-left: solid 2px #333333;
+    	border-right: solid 2px #333333;
+    	&:after {
+    		content: "";
+    		position: absolute;
+    		top: 1.1547px;
+    		left: 0;
+    		width: 126.0000px;
+    		height: 72.7461px;
+    		z-index: 2;
+    		background: inherit;
+    	}
+    }
+    .hexTop {
+    	position: absolute;
+    	z-index: 1;
+    	width: 91.92px;
+    	height: 91.92px;
+    	overflow: hidden;
+    	-webkit-transform: scaleY(0.5774) rotate(-45deg);
+    	-ms-transform: scaleY(0.5774) rotate(-45deg);
+    	transform: scaleY(0.5774) rotate(-45deg);
+    	background: inherit;
+    	left: 17.04px;
+    	top: -45.9619px;
+    	border-top: solid 2.8284px #333333;
+    	border-right: solid 2.8284px #333333;
+    	&:after {
+    		content: "";
+    		position: absolute;
+    		width: 126.0000px;
+    		height: 72.74613391789285px;
+    		-webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-36.3731px);
+    		-ms-transform: rotate(45deg) scaleY(1.7321) translateY(-36.3731px);
+    		transform: rotate(45deg) scaleY(1.7321) translateY(-36.3731px);
+    		-webkit-transform-origin: 0 0;
+    		-ms-transform-origin: 0 0;
+    		transform-origin: 0 0;
+    		background: inherit;
+    		background-position: center top;
+    	}
+    }
+    .hexBottom {
+    	position: absolute;
+    	z-index: 1;
+    	width: 91.92px;
+    	height: 91.92px;
+    	overflow: hidden;
+    	-webkit-transform: scaleY(0.5774) rotate(-45deg);
+    	-ms-transform: scaleY(0.5774) rotate(-45deg);
+    	transform: scaleY(0.5774) rotate(-45deg);
+    	background: inherit;
+    	left: 17.04px;
+    	bottom: -45.9619px;
+    	border-bottom: solid 2.8284px #333333;
+    	border-left: solid 2.8284px #333333;
+    	&:after {
+    		content: "";
+    		position: absolute;
+    		width: 126.0000px;
+    		height: 72.74613391789285px;
+    		-webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-36.3731px);
+    		-ms-transform: rotate(45deg) scaleY(1.7321) translateY(-36.3731px);
+    		transform: rotate(45deg) scaleY(1.7321) translateY(-36.3731px);
+    		-webkit-transform-origin: 0 0;
+    		-ms-transform-origin: 0 0;
+    		transform-origin: 0 0;
+    		background: inherit;
+    		background-position: center bottom;
+    	}
+    }
+
+
+
+      /*.hex {
+        position: relative;
+        width: 130px;
+        height: 75.06px;
+        background-color: #64C7CC;
+        margin: 37.53px 0;
+        display: inline-block;
+
+        &::after,
+        &::before {
+          content: "";
+          position: absolute;
+          width: 0;
+          border-left: 65px solid transparent;
+          border-right: 65px solid transparent;
+        }
+
+        &::before {
+          bottom: 100%;
+          border-bottom: 37.53px solid #64C7CC;
+        }
+
+        &::after {
+          top: 100%;
+          width: 0;
+          border-top: 37.53px solid #64C7CC;
+        }
+      }*/
+
+      .row2 {
+        left: 67px;
+        top: -38px;
+      }
+
+      .row3 {
+        top: -76px;
+        left: 134px;
+      }
+
+      .row4 {
+        left: 201px;
+        top: -114px;
+      }
+
+      .row5 {
+        top: -152px;
+        left: 268px;
+      }
+
+      .react {
+        background-image: url("./images/react.png");
+      }
+    }
+
+  }
+}
